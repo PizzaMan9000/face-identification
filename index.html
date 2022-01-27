@@ -1,0 +1,65 @@
+<html>
+    <head>
+        <title>Object recognition</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel = "stylesheet" href = "style.css">
+        
+        <script src = "https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <h1 id = "title">Face recognition app</h1>
+
+        <h3 id = "make">Model is trained to indentify:</h3>
+        <br>
+        <br>
+        <div style = "display: flex;" class = "e">
+            <h4 class = "indentify-objects">Mother</h4>
+        </div>
+        
+        <br>
+
+        <div style = "display: flex;" class = "e">
+            <h4 class = "indentify-objects">Father</h4>
+        </div>
+        <br>
+
+        <div style = "display: flex;" class = "e">
+            <h4 class = "indentify-objects">Brother</h4>
+        </div>
+        <br>
+
+        <div style = "display: flex;" class = "e">
+            <h4 class = "indentify-objects">Dog</h4>
+        </div>
+        <br>
+
+        <label>Your webcame view-</label>
+        <div id = "camera"></div>
+
+        <br>
+        <br>
+
+        <div id = "result"></div>
+
+        <br>
+
+        <button id = "click" onclick = "snapshot()">Take photo</button>
+        <br>
+        <button id = "check" onclick = "check()">Check</button>
+        <br>
+        <h4>Face: <span id = "name"></span></h4>
+        <br>
+        <h4>accuracy: <span id = "accuracy"></span></h4>
+
+        <script src = "main.js"></script>
+    </body>
+</html>
